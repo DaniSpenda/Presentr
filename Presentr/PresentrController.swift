@@ -62,6 +62,7 @@ class PresentrController: UIPresentationController, UIAdaptivePresentationContro
 		let view = PassthroughView()
 		view.shouldPassthrough = false
 		view.passthroughViews = []
+		view.accessibilityIdentifier = "PresentrBackgroundView"
 		return view
 	}()
 
