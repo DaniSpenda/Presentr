@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "Presentr",
     platforms: [
-        .iOS(.v9)
+        .iOS(.v11) // Min iOS for SwiftPackageManager is 11
     ],
     products: [
         .library(
@@ -17,9 +17,6 @@ let package = Package(
             name: "Presentr",
             path: "Presentr",
             exclude: ["Info.plist"],
-            sources: [
-                "."
-            ],
             resources: [
                 .process("**/*.xib"),
                 .process("**/*.ttf")
