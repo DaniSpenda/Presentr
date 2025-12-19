@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "Presentr",
     platforms: [
-        .iOS(.v11) // Min iOS for SwiftPackageManager is 11
+        .iOS(.v15) // Min iOS for SwiftPackageManager is 11, Spenda iPad is 15
     ],
     products: [
         .library(
